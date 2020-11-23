@@ -1,4 +1,4 @@
-const tasks = [
+const items = [
   {
     id: 1,
     task: "Gym",
@@ -9,4 +9,4 @@ const tasks = [
   { id: 3, task: "Finish the Mini project", status: false, priority: "Low" },
 ];
 
-module.exports = tasks;
+module.exports = items;
