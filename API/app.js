@@ -10,6 +10,6 @@ const app = express();
 //Middleware
 app.use(cors());
 app.use(bodyParser.json());
-app.use("/", itemRoutes);
+app.use("/todos", itemRoutes);
 
 app.listen(8000);

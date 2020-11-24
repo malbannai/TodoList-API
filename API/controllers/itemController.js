@@ -8,3 +8,11 @@ exports.itemCreate = (req, res) => {
   items.push(newItem);
   res.status(201).json(newItem);
 };
+
+exports.itemStatus = (req, res) => {
+  const { itemId } = req.params;
+  // console.log(itemId);
+  const foundItem = items.find((item) => item.id === +itemId);
+  foundItem.status = !foundItem.status;
+  res.status(204).end();
+};
